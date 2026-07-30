@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Threat Analysis Module</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- Navigation -->
+<div class="navigation">
+<a href="index.html"> 🏠 Home </a>
+<a href="email-viewer.html" class="active-link"> 📧 Threat Analysis</a>
+<a href="tips.html"> 🛡️ Safety Tips</a>
+<a href="quiz.html"> 📝 Security Quiz</a>
+
+</div>
+
+<h1> PHISHING ATTACK EXAMPLES </h1>
+
+<p>
+Review the email examples below and learn how attackers use phishing
+techniques to trick users into revealing sensitive information.
+</p>
+<br> <br>
+
+
+    <!-- Example 1 -->
+<h2>🟥 Example 1 - Phishing Email</h2>
+
+<p>
+This email contains several warning signs commonly found in phishing attacks.
+</p>
+
+<div class="threat-simulator">
+
+<div class="meta-line">
+<span class="highlight">From:</span>
+security-update@verification-portal-secure.com
+<span class="danger-text">(Spoofed External Domain)</span>
+</div>
+
+<div class="meta-line">
+<span class="highlight">Subject:</span>
+Security Alert: Verify Your Account.
+</div>
+
+<div class="email-body">
+
+<p>Hello User,</p>
+
+<p>
+We detected unusual activity on your account. 
+</p>
+            
+
+<p>
+To prevent unauthorized access, please verify your account immediately using the secure link below.
+</p>
+            
+<p><span class="highlight">Verification Link:</span></p>
+<a class="email-link" href="http://secure-login-account.com/verify.php" 
+onclick="return false;">
+
+http://secure-login-account.com/verify.php
+</a>
+<p>
+Failure to complete this verification within 24 hours
+will result in automatic account suspension.
+</p>
+
+</div>
+
+</div>
+
+
+    <!-- Threat Analysis -->
+<h2>Why This Email Is Suspicious</h2>
+
+<div class="analysis-box">
+<div class="email-body">
+
+<p>
+<span class="highlight">Unknown Sender Domain</span><br>
+The sender's email address uses an unfamiliar domain instead of the organization's official email domain.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Urgent Language</span><br>
+The email pressures the user to act immediately without giving time to verify the request.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Threat of Account Suspension</span><br>
+Creating fear is a common phishing technique used to encourage quick decisions.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Suspicious Verification Link</span><br>
+Unexpected verification links may redirect users to fake login pages designed to steal usernames and passwords.
+</p>
+
+</div>
+
+</div>
+<br> <br>
+
+    <!-- Example 2 -->
+<h2>🟩 Example 2 - Legitimate Email </h2>
+
+<p>
+Compare the phishing email above with this legitimate security notification.
+</p>
+
+<div class="threat-simulator" style="background:#f8fffa;border:1px solid #b7e4c7;">
+
+<div class="meta-line">
+<span class="highlight">From:</span>
+security@company.com
+</div>
+
+<div class="meta-line">
+<span class="highlight">Subject:</span>
+Security Notice: New Sign-in Detected
+</div>
+
+<div class="email-body">
+
+<p>Hello User,</p>
+
+<p>
+We detected a sign-in to your account from a new device.
+</p>
+
+<p>
+If this was you, no further action is required.
+</p>
+
+<p>
+If you do not recognize this activity, please visit our official website below.
+</p>
+
+<p><span class="highlight">Official Website</span></p>
+
+<a class="email-link" href="https://company.com/account/security" onclick="return false;">
+https://company.com/account/security
+</a>
+
+<p>
+Thank you,<br>
+Security Team
+</p>
+
+</div>
+
+</div>
+
+
+    <!-- Why this email is safe -->
+<h2>Why This Email Looks Safe</h2>
+
+<div class="analysis-box">
+
+<div class="email-body">
+
+<p>
+<span class="highlight">Official Sender</span><br>
+The sender uses the organization's official email domain instead of an unfamiliar or misleading address.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">No Urgent Language</span><br>
+The email informs the user about account activity without creating panic or forcing immediate action.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">No Request for Passwords</span><br>
+Legitimate organizations do not ask users to share passwords or sensitive information through email.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Safe Instructions</span><br>
+Instead of asking users to click an unexpected verification link, the email directs them to the company's official website, where they can safely review their account activity.
+</p>
+
+</div>
+
+</div>
+<br> <br>
+
+    <!-- Example 3 -->
+<h2>🟧 Example 3 - More Convincing Phishing Email</h2>
+
+<p>
+This email looks more realistic than the first one. Try to spot the warning signs before reading the explanation.
+</p>
+
+<div class="warning-box">
+
+<div class="meta-line">
+<span class="highlight">From:</span>
+security@company-support.com
+<span class="danger-text">(Fake Domain That Looks Real)</span>
+</div>
+
+<div class="meta-line">
+<span class="highlight">Subject:</span>
+Security Notice: New Sign-in Detected
+</div>
+
+<div class="email-body">
+
+<p>Hello User,</p>
+
+<p>We detected a sign-in to your account from a new device.</p>
+
+<p>If this was you, no action is required.</p>
+
+<p>If you do not recognize this activity, please review your account below.</p>
+
+<p><span class="highlight">Review Activity</span></p>
+
+<a class="email-link" href="https://company-security-login.com/verify.php" onclick="return false;">
+https://company-security-login.com/verify.php
+</a>
+
+<p>Please complete verification within <span class="highlight">12 hours</span> to avoid temporary account suspension.</p>
+
+</div>
+</div>
+
+    <!-- Threat Analysis -->
+<h2>Why This Email Is Suspicious</h2>
+
+<div class="analysis-box">
+
+<div class="email-body">
+
+<p>
+<span class="highlight">Look-alike Sender Domain</span><br>
+The sender uses <span class="highlight">company-support.com</span> instead of the official company domain.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Unnecessary Verification</span><br>
+Although the email says no action is required, it later asks the user to verify their identity.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Creates Urgency</span><br>
+The 12-hour deadline creates pressure to act quickly.
+</p>
+
+<hr>
+
+<p>
+<span class="highlight">Suspicious Website Link</span><br>
+The email includes a website link that asks users to verify their account immediately. Always check whether the website address belongs to the official organization before visiting it.
+</p>
+
+</div>
+
+</div>
+<br><br>
+
+    <!-- URL Risk Analyzer -->
+<h2>🔗 URL RISK ANALYZER (Educational Demo)</h2>
+
+<p>
+Enter a website address below to check for common phishing indicators.
+This tool is for educational purposes and cannot guarantee whether a website is safe or malicious.
+</p>
+
+<p><span class="highlight">Tip:</span> Copy a website link from the email examples above and paste it here to analyze it.</p>
+
+<div class="analysis-box">
+
+<div class="email-body">
+
+<input
+type="text"
+id="urlInput"
+class="url-input"
+placeholder="Try a website link from the email examples above">
+
+<br><br>
+
+<button type="button" class="analyze-btn" onclick="checkURL()">
+Analyze URL
+</button>
+
+<br><br>
+
+<p id="result" class="result-text"></p>
+
+</div>
+
+</div>
+
+    <!-- JAVASCRIPT SECTION -->
+<script>
+
+function checkURL() {
+
+let url = document.getElementById("urlInput").value.trim().toLowerCase();
+let result = document.getElementById("result");
+
+if(url == ""){
+
+result.style.color = "#dc2626";
+result.innerHTML = "Please enter a website URL.";
+return;
+
+}
+
+let score = 0;
+let indicators = [];
+
+// Check if HTTPS is used
+
+if(url.startsWith("https://")){
+
+indicators.push("✔ HTTPS detected.");
+
+}
+else{
+
+score += 2;
+indicators.push("✖ Website does not use HTTPS.");
+
+}
+
+// Check for @ symbol
+if(url.includes("@")){
+
+score += 3;
+indicators.push("✖ Contains '@' symbol.");
+
+}
+
+// Check for suspicious words
+let words = [
+"login",
+"verify",
+"secure",
+"update",
+"password",
+"bank",
+"payment",
+"money"
+];
+
+for(let i = 0; i < words.length; i++){
+
+if(url.includes(words[i])){
+
+score++;
+indicators.push("✖ Contains keyword: " + words[i]);
+
+}
+
+}
+
+// Check URL length
+if(url.length > 60){
+
+score++;
+indicators.push("✖ URL is unusually long.");
+
+}
+
+// Check number of hyphens
+let hyphenCount = (url.match(/-/g) || []).length;
+
+if(hyphenCount >= 3){
+
+score++;
+indicators.push("✖ Contains many hyphens.");
+
+}
+
+// Check for PHP page
+if(url.includes(".php")){
+
+score++;
+indicators.push("✖ Uses a PHP page.");
+
+}
+
+// Check for IP address
+if(/https?:\/\/(\d{1,3}\.){3}\d{1,3}/.test(url)){
+
+score += 3;
+indicators.push("✖ Uses an IP address instead of a domain name.");
+
+}
+
+// Check uncommon domain extensions
+if(
+url.endsWith(".xyz") ||
+url.endsWith(".top") ||
+url.endsWith(".click") ||
+url.endsWith(".link")
+){
+
+score++;
+indicators.push("✖ Uses an uncommon domain extension.");
+
+}
+
+// If nothing suspicious is found
+if(indicators.length == 1 && indicators[0] == "✔ HTTPS detected."){
+
+indicators.push("✔ No common phishing indicators detected.");
+
+}
+
+let status = "";
+let colour = "";
+let recommendation = "";
+
+if(score <= 1){
+
+status = "🟢 Appears Safe";
+colour = "#16a34a";
+
+recommendation =
+"No obvious phishing indicators were detected. Always verify a website before entering personal information.";
+
+}
+else if(score <= 4){
+
+status = "🟡 Needs Caution";
+colour = "#ca8a04";
+
+recommendation =
+"Some suspicious characteristics were detected. Check the website carefully before continuing.";
+
+}
+else{
+
+status = "🔴 Suspicious";
+colour = "#dc2626";
+
+recommendation =
+"Several phishing indicators were detected. Avoid entering personal information until the website has been verified.";
+
+}
+
+result.style.color = colour;
+
+result.innerHTML =
+"<span class='highlight'>Analysis Complete</span><br><br>" +
+"<span class='highlight'>Website Status:</span> " + status +
+"<br><br>" +
+"<span class='highlight'>Detected Indicators:</span><br>" +
+indicators.join("<br>") +
+"<br><br>" +
+"<span class='highlight'>Recommendation:</span><br>" +
+recommendation;
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Final Awareness Report</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+<div class="hero">
+
+<h1>📄 Final Awareness Report</h1>
+
+<p>
+
+Congratulations! You have successfully completed the Email Phishing Awareness Training.
+
+Below is a summary of your assessment and phishing awareness level.
+
+</p>
+
+</div>
+
+<div class="report-box">
+
+<h2>📋 Training Details</h2>
+
+<p><strong>Training Module :</strong> Email Phishing Awareness</p>
+
+<p><strong>Completion Status :</strong> <span class="completed">Completed</span></p>
+
+<p><strong>Assessment Type :</strong> Security Awareness Quiz</p>
+
+<p><strong>Questions Attempted :</strong> 12</p>
+
+<p><strong>Questions Correct :</strong> <span id="correct"></span></p>
+
+<p><strong>Accuracy :</strong> <span id="accuracy"></span></p>
+
+<p><strong>Awareness Level :</strong> <span id="level"></span></p>
+
+</div>
+
+<div class="report-box">
+
+<h2>📊 Performance Summary</h2>
+
+<p id="summary"></p>
+
+</div>
+
+<div class="report-box">
+
+<h2>🎯 Skills Demonstrated</h2>
+
+<ul id="skills"></ul>
+
+</div>
+
+<div class="report-box">
+
+<h2>💡 Recommendations</h2>
+
+<ul id="recommendation"></ul>
+
+</div>
+
+<div class="hero">
+
+<h2>🏆 Training Outcome</h2>
+
+<p>
+
+Thank you for completing the Email Phishing Awareness Training.
+
+Cybersecurity awareness is one of the most effective ways to protect yourself against phishing attacks and online scams.
+
+</p>
+
+</div>
+
+<div class="report-buttons">
+
+<a href="quiz.html" class="submit-btn">
+
+Retake Quiz
+
+</a>
+
+<a href="index.html" class="submit-btn">
+
+Return Home
+
+</a>
+
+</div>
+
+<script>
+
+let score = Number(localStorage.getItem("quizScore"));
+
+let accuracy = Math.round((score / 12) * 100);
+
+document.getElementById("correct").innerHTML = score + " / 12";
+
+document.getElementById("accuracy").innerHTML = accuracy + "%";
+
+if(score >= 11){
+
+document.getElementById("level").innerHTML = "🟢 Excellent";
+
+document.getElementById("summary").innerHTML = "You demonstrated an excellent understanding of phishing awareness. You successfully identified phishing emails, suspicious website links, social engineering techniques, and online safety best practices with very high accuracy.";
+
+document.getElementById("skills").innerHTML = `
+<p>✔ Identified phishing emails correctly.</p>
+<p>✔ Recognized suspicious website URLs.</p>
+<p>✔ Detected fake websites and domains.</p>
+<p>✔ Understood social engineering techniques.</p>
+<p>✔ Applied safe online security practices.</p>
+`;
+
+document.getElementById("recommendation").innerHTML = `
+<p>✔ Continue verifying sender email addresses.</p>
+<p>✔ Always inspect website URLs carefully.</p>
+<p>✔ Stay cautious of urgent or unexpected requests.</p>
+<p>✔ Continue following cybersecurity best practices.</p>
+`;
+
+}
+
+else if(score >= 8){
+
+document.getElementById("level").innerHTML = "🔵 Good";
+
+document.getElementById("summary").innerHTML = "You demonstrated a good understanding of phishing awareness. Most phishing indicators were identified correctly, although a few warning signs were missed.";
+
+document.getElementById("skills").innerHTML = `
+<p>✔ Recognized most phishing emails.</p>
+<p>✔ Identified suspicious website links.</p>
+<p>✔ Understood basic social engineering tactics.</p>
+<p>❌ Missed some phishing warning signs.</p>
+<p>❌ Needs more practice identifying fake domains.</p>
+`;
+
+document.getElementById("recommendation").innerHTML = `
+<p>✔ Review phishing email examples again.</p>
+<p>✔ Practice identifying fake website URLs.</p>
+<p>✔ Be cautious of unexpected attachments.</p>
+<p>✔ Continue improving your phishing awareness.</p>
+`;
+
+}
+
+else if(score >= 5){
+
+document.getElementById("level").innerHTML = "🟡 Fair";
+
+document.getElementById("summary").innerHTML = "You understand the basic concepts of phishing awareness, but several phishing indicators were missed during the assessment.";
+
+document.getElementById("skills").innerHTML = `
+<p>✔ Basic understanding of phishing attacks.</p>
+<p>✔ Recognized some suspicious links.</p>
+<p>❌ Missed several phishing indicators.</p>
+<p>❌ Difficulty identifying fake websites.</p>
+<p>❌ Needs improvement recognizing social engineering.</p>
+`;
+
+document.getElementById("recommendation").innerHTML = `
+<p>✔ Review the Threat Analysis page.</p>
+<p>✔ Study the URL Risk Analyzer examples.</p>
+<p>✔ Read the Safety Tips carefully.</p>
+<p>✔ Retake the quiz after reviewing the material.</p>
+`;
+
+}
+
+else{
+
+document.getElementById("level").innerHTML = "🔴 Needs Improvement";
+
+document.getElementById("summary").innerHTML = "Your assessment indicates that additional phishing awareness training is recommended before identifying phishing attacks confidently.";
+
+document.getElementById("skills").innerHTML = `
+<p>✔ Completed the phishing awareness training.</p>
+<p>❌ Difficulty identifying phishing emails.</p>
+<p>❌ Difficulty recognizing suspicious URLs.</p>
+<p>❌ Limited understanding of social engineering techniques.</p>
+<p>❌ Needs additional cybersecurity awareness training.</p>
+`;
+
+document.getElementById("recommendation").innerHTML = `
+<p>✔ Review all phishing email examples.</p>
+<p>✔ Learn how to identify suspicious URLs.</p>
+<p>✔ Read the Safety Tips page completely.</p>
+<p>✔ Retake the quiz after additional practice.</p>
+`;
+
+}
+
+</script>
+
+<div class="page-banner">
+
+<strong>Educational Notice:</strong> This platform is designed for educational and awareness purposes only. The phishing emails, URLs, and scenarios presented throughout the project are fictional examples created to help users recognize common phishing techniques.
+
+</div>
+
+</div>
+</body>
+</html>
